@@ -12,15 +12,61 @@
 
 
 <div class="container_fluid">
-	<div class="row no-gutters">
+	<div class="row">
 		<div id="headerDiv" class="col-xs-12">
 			<h1>This is iNav Header</h1>
 		</div>
 	</div> <!-- Header row ending -->
-	<div class="row no-gutters">
+	<div class="row">
 		<div id="searchWidget" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<h1>This is Search widget</h1>
-		</div>
+				<ul class="nav nav-tabs">
+				 	<li class="active"><a data-toggle="tab" href="#flight">Flight</a></li>
+				    <li><a data-toggle="tab" href="#hotel">Hotel</a></li>
+				    <li><a data-toggle="tab" href="#flightHotel">Flight+Hotel</a></li>
+				    <li><a data-toggle="tab" href="#car">Car</a></li>
+				    <li><a data-toggle="tab" href="#cruise">Cruise</a></li>
+				</ul>
+            
+              <div class="tab-content">
+                  <div id="flight" class="tab-pane fade in active">
+                     <form role="form">
+                      <label class="radio-inline"><input type="radio" name="optradio">Round Trip</label>
+                      <label class="radio-inline"><input type="radio" name="optradio">One Way</label>
+                      <div class="input-group">
+                         <span class="input-group-addon" id="basic-addon1">@</span>
+                         <input type="text" placeholder="From" id="usr">
+                      </div>
+                       <div class="input-group">
+                         <span class="input-group-addon" id="basic-addon1">@</span>
+                        <input type="text" placeholder="To" class="form-control" id="usr">
+                      </div>
+                       <div class="input-group">
+                         <span class="input-group-addon" id="basic-addon1">@</span>
+                        <input type="text" placeholder="To" class="form-control" id="usr">
+                              <span class="input-group-addon" id="basic-addon1">@</span>
+                        <input type="text" placeholder="To" class="form-control" id="usr">
+                      </div>
+                      <p>
+                       <button type="button" class="btn btn-primary btn-lg">Search Flight + Hotel</button>
+                       <button type="button" class="btn btn-primary btn-lg">Search Flitghts</button>
+                     </p>
+                     </form>
+
+                  </div>
+                  <div id="hotel" class="tab-pane fade">
+                      <h3>Hotel</h3>
+                  </div>
+                  <div id="flightHotel" class="tab-pane fade">
+                    <h3>Flight + Hotel</h3>
+                  </div>
+                  <div id="car" class="tab-pane fade">
+                    <h3>Car</h3>
+                  </div>
+                  <div id="cruise" class="tab-pane fade">
+                    <h3>Cruise</h3>
+                  </div>
+              </div>
+		</div> <!-- Search Widget end -->
 		<div id="bigPitcure" class="col-sm-8 col-md-8 col-lg-8 bigPitcure">
 			<div id="login-anchor"></div>
 			<div id="loginDiv" class="no-gutters hide">
@@ -34,7 +80,7 @@
 		</div>
 	</div><!--Content Row ending -->
 
-	<div class="row no-gutters">
+	<div class="row">
 		<div id="footerDiv" class="col-xs-12">
 			<p> 
 				<strong><sup>1</sup>Double Points:</strong><br/>

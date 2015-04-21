@@ -7,25 +7,9 @@
 		
 	}}
 
-
-.row.no-gutters {
-	margin-right: 0;
-	margin-left: 0;
-}
-.no-gutters {
-	margin-right: 0;
-	margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-	padding-right: 0;
-	padding-left: 0;
-}
-
 #searchWidget {
 	z-index: 1001;
 	top:70px;
-	background-color: lightblue;
 }
 #bigPitcure {
 	border-width: 1px;
@@ -77,3 +61,34 @@
     z-index: 10000;
     border-radius: 0 0 0.5em 0.5em;
 }
+
+
+
+.nav-tabs { 
+	margin: 0px;
+	
+}
+.tab-content{
+
+}
+.nav-tabs > li > a {
+	line-height: 25px !important;
+	margin-right: 0px !important;
+	border:0px solid #D5D5D5 !important;
+	border-right-width :1px !important;
+	border-radius: 0px 0px 0 0 !important;
+
+}
+.nav-tabs > li > a:link {
+	
+}
+.nav-tabs > li > a:hover {
+	text-decoration: underline;
+	-moz-text-decoration-color: #009BBB; /* Code for Firefox */
+    text-decoration-color: #009BBB;
+}
+
+
+
+
+
