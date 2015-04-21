@@ -12,6 +12,10 @@
 	margin-right: 0;
 	margin-left: 0;
 }
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
 .row.no-gutters > [class^="col-"],
 .row.no-gutters > [class*=" col-"] {
 	padding-right: 0;
@@ -57,4 +61,19 @@
 	top:800px;
 	height: 200px;
 	background-color: #800080;
+}
+.hide {
+	display: none;
+}
+#loginDiv {
+	width: 30%;
+	background-color: lightblue;
+}
+.loginStick{
+	display: block;
+	position: fixed;
+    top:70px;
+    right: 0px;
+    z-index: 10000;
+    border-radius: 0 0 0.5em 0.5em;
 }
