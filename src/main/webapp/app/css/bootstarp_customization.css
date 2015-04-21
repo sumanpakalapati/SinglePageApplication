@@ -40,11 +40,21 @@
 	background-color: yellow;
 	clear: both;
 }
-#emailSignUpDiv{
+#emailSignUpDiv {
 	position: absolute;
 	top:800px;
-	height: 200px;
-	background-color: #800080;
+	background-color: purple;
+}
+
+.signUpMessage > h2, .signUpMessage > p {
+	color: white;
+}
+.signUpMessage {
+	margin-left: 30px;
+}
+.socialGrpBtn{
+	margin-top: 50px;
+	position: relative;
 }
 .hide {
 	display: none;
