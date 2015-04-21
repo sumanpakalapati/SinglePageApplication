@@ -1,0 +1,60 @@
+.centerDiv {
+
+}
+.virticalCenter{
+	margin-left: 8%;
+	margin-top: 5%;
+}
+.footerDiv {
+	position: relative;
+	clear: both !important;
+}
+@media (min-width: 768px) {
+	 .bigPitcture {
+	 	position: relative;
+		float: right;
+		z-index: 999;
+	 }
+	 .searchWidget {
+		position: fixed;
+		z-index: 1000;
+	 }
+	 .row.no-gutters {
+ 		 margin-right: 0;
+  	     margin-left: 0;
+	}
+	.row.no-gutters > [class^="col-"],
+	.row.no-gutters > [class*=" col-"] {
+	  padding-right: 0;
+	  padding-left: 0;
+	}
+	.searchDivOverlap {
+		width: 450px;
+		margin-left: 0px !important;
+	}
+}
+.searchDivOverlap {
+	border-radius: 0 6px 6px 0;
+	box-shadow: 3px 3px 4px 0px;
+	color: rgba(1.2,2.0.0.17);
+	background-color: white;
+	margin-left: 15px;
+}
+
+.nopadding {
+	margin: 0px !important;
+	padding:0px !important;
+}
+.bigPitcture {
+	top:90px;
+	background-color: #7FFFD4;
+	height: 1200px;
+	z-index: 999;
+}
+.searchWidget {
+	top:90px;
+	background-color: white;
+	z-index: 1001;
+}
+
+

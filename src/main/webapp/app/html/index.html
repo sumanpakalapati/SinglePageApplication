@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html ng-app="responsive.app">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="../js/bootstrap-3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="../js/bootstrap-3.3.4/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" href="../css/style.css"></link>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container_fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active"><a href="#">Home</a></li>
+						<li role="presentation"><a href="#">Profile</a></li>
+						<li role="presentation"><a href="#">Messages</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+	<div id="containerId" class="container_fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div ng-controller="HelloController" class="content">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-xs-2 control-label">Email</label>
+							<div class="col-xs-10">
+								<input type="email" class="form-control" id="inputEmail3"
+									placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-xs-2 control-label">Password</label>
+							<div class="col-xs-10">
+								<input type="password" class="form-control" id="inputPassword3"
+									placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">
+									<label> <input type="checkbox"> Remember me
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-default">Sign in</button>
+							</div>
+						</div>
+					</form>
+					<p>Current Date : {{currentDate}}</p>
+					<h3>Tooltip Example</h3>
+					<a href="#" data-toggle="tooltip" title="fsfsdffsdffffffffff!">Hover
+						over me</a>
+				</div>
+			</div>
+		</div>
+		<!-- Content row ended. -->
+
+		<div class="row">
+			<div class="col-xs-12 cttFooter">
+				<p class="pwpText text-center">
+					<strong><sup><small>1</small></sup>Double Points:</strong><br />
+					Eligible purchases are travel purchases, excluding car
+					reservations, non-prepaid hotels, and Fine Hotels & Resorts and The
+					Hotel Collection bookings, booked through amextravel.com on your
+					Membership Rewards program-enrolled American Express® Card. To earn
+					2X points on each dollar of eligible purchases, you must charge
+					air, prepaid hotel, vacation packages (flight + hotel packages),
+					American Express Vacations packages or cruise reservations through
+					amextravel.com to your eligible, Membership Rewards
+					program-enrolled American Express Card. Any portion of a charge
+					that you elect to pay through redemption of Membership Rewards
+					points is not eligible to earn points. Bonus ID A2EM (Air, Hotel,
+					and vacation packages); Bonus ID 5432 (Cruise); <strong>Bonus
+						ID 6955</strong> (American Express Vacations Packages). Extra points will
+					be credited to the Membership Rewards account 10-12 weeks after
+					final payment is made.
+				<p class="pwpText">See membershiprewards.com/terms for the
+					Membership Rewards program terms and conditions.</p>
+				</p>
+				<p class="pwpText">
+					<strong>Pay with Points:</strong><br /> To use Pay with Points,
+					you must charge your eligible purchase through American Express
+					Travel to a Membership Rewards® program-enrolled American Express®
+					Card. Eligible purchases exclude car reservations, non-prepaid
+					hotels, and Fine Hotels & Resorts and The Hotel Collection
+					bookings. Points will be debited from your Membership Rewards
+					account, and credit for corresponding dollar amount will be issued
+					to the American Express Card account used. If points redeemed do
+					not cover entire amount, the balance of purchase price will remain
+					on the American Express Card account. Minimum redemption 5,000
+					points. See membershiprewards.com/terms for the Membership Rewards
+					program terms and conditions. <br /> If a charge for a purchase is
+					included in a Pay Over Time feature balance on your Linked Account
+					(for example, the Extended Payment Option), the statement credit
+					associated with that charge may not be applied to that Pay Over
+					Time feature balance. Instead the statement credit may be applied
+					to your Pay in Full balance. If you believe this has occurred,
+					please contact us by calling the number on the back of your Card.
+				</p>
+
+				<p class="lrgText">
+					<strong>Lowest Hotel Rate Guaranteed:</strong><br /> If you book a
+					qualifying prepaid hotel rate on amextravel.com and then find the
+					same room, in the same hotel, for the same dates, the same number
+					of children and adults, at a lower price online, before taxes and
+					fees, we'll refund you the difference. The "Lowest Rate Guaranteed"
+					policy applies only to online rates available to the general public
+					and excludes (1) rates or discounts that are not available to the
+					general public, including, but not limited to, corporate, group,
+					charter, meeting/convention, AAA, government/military, and senior
+					citizen rates/discounts; or (2) hotel rooms booked through or in
+					combination with frequent stay, loyalty, points, coupon promotions,
+					rooms won through contests or sweepstakes or transferred, or rooms
+					booked on opaque websites that do not allow you to see the name of
+					the hotel until your reservation is complete, and (3) rates booked
+					through the Fine Hotels & Resorts program and The Hotel Collection.
+					Details
+				</p>
+				<p class="pwpText text-center">
+					<strong><sup><small>1</small></sup>Double Points:</strong><br />
+					Eligible purchases are travel purchases, excluding car
+					reservations, non-prepaid hotels, and Fine Hotels & Resorts and The
+					Hotel Collection bookings, booked through amextravel.com on your
+					Membership Rewards program-enrolled American Express® Card. To earn
+					2X points on each dollar of eligible purchases, you must charge
+					air, prepaid hotel, vacation packages (flight + hotel packages),
+					American Express Vacations packages or cruise reservations through
+					amextravel.com to your eligible, Membership Rewards
+					program-enrolled American Express Card. Any portion of a charge
+					that you elect to pay through redemption of Membership Rewards
+					points is not eligible to earn points. Bonus ID A2EM (Air, Hotel,
+					and vacation packages); Bonus ID 5432 (Cruise); <strong>Bonus
+						ID 6955</strong> (American Express Vacations Packages). Extra points will
+					be credited to the Membership Rewards account 10-12 weeks after
+					final payment is made.
+				<p class="pwpText">See membershiprewards.com/terms for the
+					Membership Rewards program terms and conditions.</p>
+				</p>
+				<p class="pwpText">
+					<strong>Pay with Points:</strong><br /> To use Pay with Points,
+					you must charge your eligible purchase through American Express
+					Travel to a Membership Rewards® program-enrolled American Express®
+					Card. Eligible purchases exclude car reservations, non-prepaid
+					hotels, and Fine Hotels & Resorts and The Hotel Collection
+					bookings. Points will be debited from your Membership Rewards
+					account, and credit for corresponding dollar amount will be issued
+					to the American Express Card account used. If points redeemed do
+					not cover entire amount, the balance of purchase price will remain
+					on the American Express Card account. Minimum redemption 5,000
+					points. See membershiprewards.com/terms for the Membership Rewards
+					program terms and conditions. <br /> If a charge for a purchase is
+					included in a Pay Over Time feature balance on your Linked Account
+					(for example, the Extended Payment Option), the statement credit
+					associated with that charge may not be applied to that Pay Over
+					Time feature balance. Instead the statement credit may be applied
+					to your Pay in Full balance. If you believe this has occurred,
+					please contact us by calling the number on the back of your Card.
+				</p>
+
+				<p class="lrgText">
+					<strong>Lowest Hotel Rate Guaranteed:</strong><br /> If you book a
+					qualifying prepaid hotel rate on amextravel.com and then find the
+					same room, in the same hotel, for the same dates, the same number
+					of children and adults, at a lower price online, before taxes and
+					fees, we'll refund you the difference. The "Lowest Rate Guaranteed"
+					policy applies only to online rates available to the general public
+					and excludes (1) rates or discounts that are not available to the
+					general public, including, but not limited to, corporate, group,
+					charter, meeting/convention, AAA, government/military, and senior
+					citizen rates/discounts; or (2) hotel rooms booked through or in
+					combination with frequent stay, loyalty, points, coupon promotions,
+					rooms won through contests or sweepstakes or transferred, or rooms
+					booked on opaque websites that do not allow you to see the name of
+					the hotel until your reservation is complete, and (3) rates booked
+					through the Fine Hotels & Resorts program and The Hotel Collection.
+					Details
+				</p>
+				<p class="pwpText text-center">
+					<strong><sup><small>1</small></sup>Double Points:</strong><br />
+					Eligible purchases are travel purchases, excluding car
+					reservations, non-prepaid hotels, and Fine Hotels & Resorts and The
+					Hotel Collection bookings, booked through amextravel.com on your
+					Membership Rewards program-enrolled American Express® Card. To earn
+					2X points on each dollar of eligible purchases, you must charge
+					air, prepaid hotel, vacation packages (flight + hotel packages),
+					American Express Vacations packages or cruise reservations through
+					amextravel.com to your eligible, Membership Rewards
+					program-enrolled American Express Card. Any portion of a charge
+					that you elect to pay through redemption of Membership Rewards
+					points is not eligible to earn points. Bonus ID A2EM (Air, Hotel,
+					and vacation packages); Bonus ID 5432 (Cruise); <strong>Bonus
+						ID 6955</strong> (American Express Vacations Packages). Extra points will
+					be credited to the Membership Rewards account 10-12 weeks after
+					final payment is made.
+				<p class="pwpText">See membershiprewards.com/terms for the
+					Membership Rewards program terms and conditions.</p>
+				</p>
+				<p class="pwpText">
+					<strong>Pay with Points:</strong><br /> To use Pay with Points,
+					you must charge your eligible purchase through American Express
+					Travel to a Membership Rewards® program-enrolled American Express®
+					Card. Eligible purchases exclude car reservations, non-prepaid
+					hotels, and Fine Hotels & Resorts and The Hotel Collection
+					bookings. Points will be debited from your Membership Rewards
+					account, and credit for corresponding dollar amount will be issued
+					to the American Express Card account used. If points redeemed do
+					not cover entire amount, the balance of purchase price will remain
+					on the American Express Card account. Minimum redemption 5,000
+					points. See membershiprewards.com/terms for the Membership Rewards
+					program terms and conditions. <br /> If a charge for a purchase is
+					included in a Pay Over Time feature balance on your Linked Account
+					(for example, the Extended Payment Option), the statement credit
+					associated with that charge may not be applied to that Pay Over
+					Time feature balance. Instead the statement credit may be applied
+					to your Pay in Full balance. If you believe this has occurred,
+					please contact us by calling the number on the back of your Card.
+				</p>
+
+				<p class="lrgText">
+					<strong>Lowest Hotel Rate Guaranteed:</strong><br /> If you book a
+					qualifying prepaid hotel rate on amextravel.com and then find the
+					same room, in the same hotel, for the same dates, the same number
+					of children and adults, at a lower price online, before taxes and
+					fees, we'll refund you the difference. The "Lowest Rate Guaranteed"
+					policy applies only to online rates available to the general public
+					and excludes (1) rates or discounts that are not available to the
+					general public, including, but not limited to, corporate, group,
+					charter, meeting/convention, AAA, government/military, and senior
+					citizen rates/discounts; or (2) hotel rooms booked through or in
+					combination with frequent stay, loyalty, points, coupon promotions,
+					rooms won through contests or sweepstakes or transferred, or rooms
+					booked on opaque websites that do not allow you to see the name of
+					the hotel until your reservation is complete, and (3) rates booked
+					through the Fine Hotels & Resorts program and The Hotel Collection.
+					Details
+				</p>
+				<p class="pwpText text-center">
+					<strong><sup><small>1</small></sup>Double Points:</strong><br />
+					Eligible purchases are travel purchases, excluding car
+					reservations, non-prepaid hotels, and Fine Hotels & Resorts and The
+					Hotel Collection bookings, booked through amextravel.com on your
+					Membership Rewards program-enrolled American Express® Card. To earn
+					2X points on each dollar of eligible purchases, you must charge
+					air, prepaid hotel, vacation packages (flight + hotel packages),
+					American Express Vacations packages or cruise reservations through
+					amextravel.com to your eligible, Membership Rewards
+					program-enrolled American Express Card. Any portion of a charge
+					that you elect to pay through redemption of Membership Rewards
+					points is not eligible to earn points. Bonus ID A2EM (Air, Hotel,
+					and vacation packages); Bonus ID 5432 (Cruise); <strong>Bonus
+						ID 6955</strong> (American Express Vacations Packages). Extra points will
+					be credited to the Membership Rewards account 10-12 weeks after
+					final payment is made.
+				<p class="pwpText">See membershiprewards.com/terms for the
+					Membership Rewards program terms and conditions.</p>
+				</p>
+				<p class="pwpText">
+					<strong>Pay with Points:</strong><br /> To use Pay with Points,
+					you must charge your eligible purchase through American Express
+					Travel to a Membership Rewards® program-enrolled American Express®
+					Card. Eligible purchases exclude car reservations, non-prepaid
+					hotels, and Fine Hotels & Resorts and The Hotel Collection
+					bookings. Points will be debited from your Membership Rewards
+					account, and credit for corresponding dollar amount will be issued
+					to the American Express Card account used. If points redeemed do
+					not cover entire amount, the balance of purchase price will remain
+					on the American Express Card account. Minimum redemption 5,000
+					points. See membershiprewards.com/terms for the Membership Rewards
+					program terms and conditions. <br /> If a charge for a purchase is
+					included in a Pay Over Time feature balance on your Linked Account
+					(for example, the Extended Payment Option), the statement credit
+					associated with that charge may not be applied to that Pay Over
+					Time feature balance. Instead the statement credit may be applied
+					to your Pay in Full balance. If you believe this has occurred,
+					please contact us by calling the number on the back of your Card.
+				</p>
+
+				<p class="lrgText">
+					<strong>Lowest Hotel Rate Guaranteed:</strong><br /> If you book a
+					qualifying prepaid hotel rate on amextravel.com and then find the
+					same room, in the same hotel, for the same dates, the same number
+					of children and adults, at a lower price online, before taxes and
+					fees, we'll refund you the difference. The "Lowest Rate Guaranteed"
+					policy applies only to online rates available to the general public
+					and excludes (1) rates or discounts that are not available to the
+					general public, including, but not limited to, corporate, group,
+					charter, meeting/convention, AAA, government/military, and senior
+					citizen rates/discounts; or (2) hotel rooms booked through or in
+					combination with frequent stay, loyalty, points, coupon promotions,
+					rooms won through contests or sweepstakes or transferred, or rooms
+					booked on opaque websites that do not allow you to see the name of
+					the hotel until your reservation is complete, and (3) rates booked
+					through the Fine Hotels & Resorts program and The Hotel Collection.
+					Details
+				</p>
+				<p class="pwpText text-center">
+					<strong><sup><small>1</small></sup>Double Points:</strong><br />
+					Eligible purchases are travel purchases, excluding car
+					reservations, non-prepaid hotels, and Fine Hotels & Resorts and The
+					Hotel Collection bookings, booked through amextravel.com on your
+					Membership Rewards program-enrolled American Express® Card. To earn
+					2X points on each dollar of eligible purchases, you must charge
+					air, prepaid hotel, vacation packages (flight + hotel packages),
+					American Express Vacations packages or cruise reservations through
+					amextravel.com to your eligible, Membership Rewards
+					program-enrolled American Express Card. Any portion of a charge
+					that you elect to pay through redemption of Membership Rewards
+					points is not eligible to earn points. Bonus ID A2EM (Air, Hotel,
+					and vacation packages); Bonus ID 5432 (Cruise); <strong>Bonus
+						ID 6955</strong> (American Express Vacations Packages). Extra points will
+					be credited to the Membership Rewards account 10-12 weeks after
+					final payment is made.
+				<p class="pwpText">See membershiprewards.com/terms for the
+					Membership Rewards program terms and conditions.</p>
+				</p>
+				<p class="pwpText">
+					<strong>Pay with Points:</strong><br /> To use Pay with Points,
+					you must charge your eligible purchase through American Express
+					Travel to a Membership Rewards® program-enrolled American Express®
+					Card. Eligible purchases exclude car reservations, non-prepaid
+					hotels, and Fine Hotels & Resorts and The Hotel Collection
+					bookings. Points will be debited from your Membership Rewards
+					account, and credit for corresponding dollar amount will be issued
+					to the American Express Card account used. If points redeemed do
+					not cover entire amount, the balance of purchase price will remain
+					on the American Express Card account. Minimum redemption 5,000
+					points. See membershiprewards.com/terms for the Membership Rewards
+					program terms and conditions. <br /> If a charge for a purchase is
+					included in a Pay Over Time feature balance on your Linked Account
+					(for example, the Extended Payment Option), the statement credit
+					associated with that charge may not be applied to that Pay Over
+					Time feature balance. Instead the statement credit may be applied
+					to your Pay in Full balance. If you believe this has occurred,
+					please contact us by calling the number on the back of your Card.
+				</p>
+
+				<p class="lrgText">
+					<strong>Lowest Hotel Rate Guaranteed:</strong><br /> If you book a
+					qualifying prepaid hotel rate on amextravel.com and then find the
+					same room, in the same hotel, for the same dates, the same number
+					of children and adults, at a lower price online, before taxes and
+					fees, we'll refund you the difference. The "Lowest Rate Guaranteed"
+					policy applies only to online rates available to the general public
+					and excludes (1) rates or discounts that are not available to the
+					general public, including, but not limited to, corporate, group,
+					charter, meeting/convention, AAA, government/military, and senior
+					citizen rates/discounts; or (2) hotel rooms booked through or in
+					combination with frequent stay, loyalty, points, coupon promotions,
+					rooms won through contests or sweepstakes or transferred, or rooms
+					booked on opaque websites that do not allow you to see the name of
+					the hotel until your reservation is complete, and (3) rates booked
+					through the Fine Hotels & Resorts program and The Hotel Collection.
+					Details
+				</p>
+				<p class="pwpText text-center">
+					<strong><sup><small>1</small></sup>Double Points:</strong><br />
+					Eligible purchases are travel purchases, excluding car
+					reservations, non-prepaid hotels, and Fine Hotels & Resorts and The
+					Hotel Collection bookings, booked through amextravel.com on your
+					Membership Rewards program-enrolled American Express® Card. To earn
+					2X points on each dollar of eligible purchases, you must charge
+					air, prepaid hotel, vacation packages (flight + hotel packages),
+					American Express Vacations packages or cruise reservations through
+					amextravel.com to your eligible, Membership Rewards
+					program-enrolled American Express Card. Any portion of a charge
+					that you elect to pay through redemption of Membership Rewards
+					points is not eligible to earn points. Bonus ID A2EM (Air, Hotel,
+					and vacation packages); Bonus ID 5432 (Cruise); <strong>Bonus
+						ID 6955</strong> (American Express Vacations Packages). Extra points will
+					be credited to the Membership Rewards account 10-12 weeks after
+					final payment is made.
+				<p class="pwpText">See membershiprewards.com/terms for the
+					Membership Rewards program terms and conditions.</p>
+				</p>
+				<p class="pwpText">
+					<strong>Pay with Points:</strong><br /> To use Pay with Points,
+					you must charge your eligible purchase through American Express
+					Travel to a Membership Rewards® program-enrolled American Express®
+					Card. Eligible purchases exclude car reservations, non-prepaid
+					hotels, and Fine Hotels & Resorts and The Hotel Collection
+					bookings. Points will be debited from your Membership Rewards
+					account, and credit for corresponding dollar amount will be issued
+					to the American Express Card account used. If points redeemed do
+					not cover entire amount, the balance of purchase price will remain
+					on the American Express Card account. Minimum redemption 5,000
+					points. See membershiprewards.com/terms for the Membership Rewards
+					program terms and conditions. <br /> If a charge for a purchase is
+					included in a Pay Over Time feature balance on your Linked Account
+					(for example, the Extended Payment Option), the statement credit
+					associated with that charge may not be applied to that Pay Over
+					Time feature balance. Instead the statement credit may be applied
+					to your Pay in Full balance. If you believe this has occurred,
+					please contact us by calling the number on the back of your Card.
+				</p>
+
+				<p class="lrgText">
+					<strong>Lowest Hotel Rate Guaranteed:</strong><br /> If you book a
+					qualifying prepaid hotel rate on amextravel.com and then find the
+					same room, in the same hotel, for the same dates, the same number
+					of children and adults, at a lower price online, before taxes and
+					fees, we'll refund you the difference. The "Lowest Rate Guaranteed"
+					policy applies only to online rates available to the general public
+					and excludes (1) rates or discounts that are not available to the
+					general public, including, but not limited to, corporate, group,
+					charter, meeting/convention, AAA, government/military, and senior
+					citizen rates/discounts; or (2) hotel rooms booked through or in
+					combination with frequent stay, loyalty, points, coupon promotions,
+					rooms won through contests or sweepstakes or transferred, or rooms
+					booked on opaque websites that do not allow you to see the name of
+					the hotel until your reservation is complete, and (3) rates booked
+					through the Fine Hotels & Resorts program and The Hotel Collection.
+					Details
+				</p>
+				<p class="pwpText text-center">
+					<strong><sup><small>1</small></sup>Double Points:</strong><br />
+					Eligible purchases are travel purchases, excluding car
+					reservations, non-prepaid hotels, and Fine Hotels & Resorts and The
+					Hotel Collection bookings, booked through amextravel.com on your
+					Membership Rewards program-enrolled American Express® Card. To earn
+					2X points on each dollar of eligible purchases, you must charge
+					air, prepaid hotel, vacation packages (flight + hotel packages),
+					American Express Vacations packages or cruise reservations through
+					amextravel.com to your eligible, Membership Rewards
+					program-enrolled American Express Card. Any portion of a charge
+					that you elect to pay through redemption of Membership Rewards
+					points is not eligible to earn points. Bonus ID A2EM (Air, Hotel,
+					and vacation packages); Bonus ID 5432 (Cruise); <strong>Bonus
+						ID 6955</strong> (American Express Vacations Packages). Extra points will
+					be credited to the Membership Rewards account 10-12 weeks after
+					final payment is made.
+				<p class="pwpText">See membershiprewards.com/terms for the
+					Membership Rewards program terms and conditions.</p>
+				</p>
+				<p class="pwpText">
+					<strong>Pay with Points:</strong><br /> To use Pay with Points,
+					you must charge your eligible purchase through American Express
+					Travel to a Membership Rewards® program-enrolled American Express®
+					Card. Eligible purchases exclude car reservations, non-prepaid
+					hotels, and Fine Hotels & Resorts and The Hotel Collection
+					bookings. Points will be debited from your Membership Rewards
+					account, and credit for corresponding dollar amount will be issued
+					to the American Express Card account used. If points redeemed do
+					not cover entire amount, the balance of purchase price will remain
+					on the American Express Card account. Minimum redemption 5,000
+					points. See membershiprewards.com/terms for the Membership Rewards
+					program terms and conditions. <br /> If a charge for a purchase is
+					included in a Pay Over Time feature balance on your Linked Account
+					(for example, the Extended Payment Option), the statement credit
+					associated with that charge may not be applied to that Pay Over
+					Time feature balance. Instead the statement credit may be applied
+					to your Pay in Full balance. If you believe this has occurred,
+					please contact us by calling the number on the back of your Card.
+				</p>
+
+				<p class="lrgText">
+					<strong>Lowest Hotel Rate Guaranteed:</strong><br /> If you book a
+					qualifying prepaid hotel rate on amextravel.com and then find the
+					same room, in the same hotel, for the same dates, the same number
+					of children and adults, at a lower price online, before taxes and
+					fees, we'll refund you the difference. The "Lowest Rate Guaranteed"
+					policy applies only to online rates available to the general public
+					and excludes (1) rates or discounts that are not available to the
+					general public, including, but not limited to, corporate, group,
+					charter, meeting/convention, AAA, government/military, and senior
+					citizen rates/discounts; or (2) hotel rooms booked through or in
+					combination with frequent stay, loyalty, points, coupon promotions,
+					rooms won through contests or sweepstakes or transferred, or rooms
+					booked on opaque websites that do not allow you to see the name of
+					the hotel until your reservation is complete, and (3) rates booked
+					through the Fine Hotels & Resorts program and The Hotel Collection.
+					Details
+				</p>
+			</div>
+		</div>
+	</div>
+	<div>
+		Choose: <a href="/view1">View1</a> |
+				 <a href="/view2">Vie2</a><br />
+
+		<div>
+			<div ng-view></div>
+		</div>
+		
+	</div>
+
+
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<script type="text/javascript"
+		src="https://code.angularjs.org/1.3.15/angular-route.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../js/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+</body>
+</html>
