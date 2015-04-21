@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+	#searchWidget {
+		position: fixed;
+	}
+	#bigPitcure {
+		float: right;
+		
+	}}
+
+
+.row.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#searchWidget {
+	z-index: 1001;
+	top:70px;
+	background-color: lightblue;
+}
+#bigPitcure {
+	border-width: 1px;
+	border-style: dotted;
+	position: relative;
+	top:70px;
+	background-color: lightyellow;
+	height: 1000px;
+}
+#headerDiv{
+	z-index: 1000;
+	position: fixed;
+	background-color: green;
+}
+
+#footerDiv {
+	border-width: 1px;
+	border-style: dotted;
+	position: relative;
+	top: 73px;
+	background-color: white;
+	clear: both;
+}
+#iNavFooter{
+	border-width: 1px;
+	border-style: dotted;
+	position: relative;
+	background-color: yellow;
+	clear: both;
+}
+#emailSignUpDiv{
+	position: absolute;
+	top:800px;
+	height: 200px;
+	background-color: #800080;
+}

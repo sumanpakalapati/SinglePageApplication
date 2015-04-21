@@ -1,14 +1,16 @@
-.centerDiv {
-
-}
 .virticalCenter{
 	margin-left: 8%;
 	margin-top: 5%;
 }
-.footerDiv {
+.footer {
+	background-color: black;
 	position: relative;
-	clear: both !important;
+	right: 0px;
+	bottom: 0px;
+	z-index: 22222;
+	float: right;
 }
+
 @media (min-width: 768px) {
 	 .bigPitcture {
 	 	position: relative;
@@ -46,6 +48,7 @@
 	padding:0px !important;
 }
 .bigPitcture {
+	position: relative;
 	top:90px;
 	background-color: #7FFFD4;
 	height: 1200px;
