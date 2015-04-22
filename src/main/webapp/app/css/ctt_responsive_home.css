@@ -45,7 +45,7 @@
 #emailSignUpDiv {
 	height: 100%;
 	background-color: purple;
-	padding-top: 50px;
+	padding-top: 6.0606060608%;
 	height: 100%;
 }
 
@@ -56,8 +56,19 @@
 	padding-bottom: 39px;
 
 }
-.signUpMessage > h2, .signUpMessage > p {
+.signUpMessage > h2  {
 	color: white;
+	font-family: arial;
+	
+}
+.signUpMessage > p {
+	color: white;
+	font-family: arial;
+	font-size: 15px;
+}
+#privacy_policy{
+	color: white;
+	text-decoration: underline;
 }
 .signUpMessage {
 	margin-left: 30px;
@@ -81,7 +92,7 @@
 	width:200px;
 }
 #socialMediaDiv {
-	margin-top:105px;
+	margin-top:7%;
 }
 .signUpMessage .input-group .form-control{
 	 height:45px;
