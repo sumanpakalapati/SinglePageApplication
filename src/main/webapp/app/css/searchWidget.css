@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+	#searchWidget {
+		position: fixed;
+	}
+	#bigPitcure {
+		float: right;
+		
+	}
+}
+
+.search{
+	background-color: yellow;	
+	border: 1px solid gray;
+}
+.search-row2 {
+	background-color: green;
+}
+.bigPitcure-row-1-col-1 {
+	z-index: 1001;
+	height: 100%;
+	background-color: lightblue;
+
+}
+.bigPitcure-row-1-col-2 {
+	height: 100%;
+	background-color: lightgreen;
+
+}
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }

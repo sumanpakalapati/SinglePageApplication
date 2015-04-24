@@ -7,7 +7,18 @@
 	#bigPitcure {
 		float: right;
 		
-	}}
+	}
+	.tab-content{
+		width:450px;
+		border: 5px;
+		border-width: 1px;
+		border-style: dotted;
+		z-index: 33333;
+		position: relative;
+		border-radius: 6px;
+		background-color: white;
+	}
+}
 
 #searchWidget {
 	z-index: 1001;
@@ -136,9 +147,7 @@
 	margin: 0px;
 	
 }
-.tab-content{
 
-}
 .nav-tabs > li > a {
 	line-height: 25px !important;
 	margin-right: 0px !important;
@@ -314,6 +323,23 @@ p {
 	font-family: Arial, Verdana, Helvetica, san-serif !important;
 }
 
+
+
+/* enable absolute positioning */
+#emailAddressDiv .inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+#emailAddressDiv .inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+#emailAddressDiv .left-addon .glyphicon  { left:  0px;}
+#emailAddressDiv .right-addon .glyphicon { right: 0px;}
 
 
 
