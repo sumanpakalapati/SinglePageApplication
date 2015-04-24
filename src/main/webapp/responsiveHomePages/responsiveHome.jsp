@@ -234,14 +234,11 @@
 									<p>By entering your email, you are agreeing to receive offers <br/>
 										from American Express Travel.<a href="https://www212.americanexpress.com/dsmlive/dsm/int/internetprivacystatement.do?vgnextoid=1afe214407d5c210VgnVCM100000defaad94RCRD" title="Our privacy policy" alt="Our privacy policy" id="privacy_policy" tabindex="5700">Our privacy policy</a>
 								</p>
+							  
 								<div class="input-group">
+									 <input type="text" class="form-control" placeholder="Email Address" ng-model="emailAddress"></input>
+									 
 								     <span class="input-group-btn">
-								        <button id="" class="btn btn-default" type="button">
-								        	<span class="glyphicon glyphicon-envelope"></span>
-								        </button>
-								      </span>
-								      <input type="text" class="form-control" placeholder="Email Address" ng-model="emailAddress">
-								      <span class="input-group-btn">
 								        <button id="emailSignUpBtn" class="btn btn-default" type="button" ng-click="submitEmailSignup()">Submit</button>
 								      </span>
 								    </div>
