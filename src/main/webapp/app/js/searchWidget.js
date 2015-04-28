@@ -23,6 +23,7 @@ app.controller("TripsController", ['$http','$window', function($http, $window) {
 		var testCtrl = this;
 		testCtrl.trips = [];
 		testCtrl.today = new Date();
+		
 		var req = {
 				method : 'GET',
 		 		url :'/SinglePageApplication/trips'
@@ -33,7 +34,7 @@ app.controller("TripsController", ['$http','$window', function($http, $window) {
 				testCtrl.responseTxt  = status;
 			
 		});
-		
+		/* This is custome sort order*/
 		testCtrl.sortByLOB = function(trip) {
 		
 			if (trip.lineOfBusiness ==='AIR') {

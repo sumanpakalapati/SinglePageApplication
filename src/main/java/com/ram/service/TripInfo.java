@@ -3,6 +3,7 @@ package com.ram.service;
 import java.util.Date;
 
 import org.joda.time.DateTime;
+import org.joda.time.Days;
 
 public class TripInfo {
 
@@ -12,8 +13,18 @@ public class TripInfo {
 	private String destinationCity;
 	private String airPortCode;
 	private String lineOfBusiness;
+	private int daysToTravel;
 	
 	
+	
+
+	public int getDaysToTravel() {
+		return daysToTravel;
+	}
+
+	public void setDaysToTravel(int daysToTravel) {
+		this.daysToTravel = daysToTravel;
+	}
 
 	public String getLineOfBusiness() {
 		return lineOfBusiness;
@@ -45,12 +56,13 @@ public class TripInfo {
 
 	public void setTripDates(int noOfDays) {
 		java.util.Date juDate = new Date();
-		DateTime dt = new DateTime(juDate);
-		DateTime startDate = dt.plusDays(noOfDays);
+		DateTime today = new DateTime(juDate);
+		DateTime startDate = today.plusDays(noOfDays);
 		DateTime endDate = startDate.plusDays(3);
 
 		this.startDate = startDate.toString();
 		this.endDate = endDate.toString();
+		this.daysToTravel = Days.daysBetween(today, startDate).getDays();
 
 	}
 

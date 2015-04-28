@@ -40,17 +40,18 @@
                   
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <div class="jumbotron"  ng-controller="TripsController as tripsCtrl">
+                      <div ng-controller="TripsController as tripsCtrl">
                         <p>DATE</p>
                           <p>
                           {{ tripsCtrl.today | date:'EEE' | uppercase }}
-                        </p>
+                         </p>
                            <p>
-                          {{ tripsCtrl.today | date:'yyyy-MM-dd' }}
+                          {{ tripsCtrl.today | date:'MM/dd/yyyy' }}
                         </p>
                          <ul>
-                           <li ng-repeat="trip in tripsCtrl.trips | orderBy:['startDate',tripsCtrl.sortByLOB]">{
-                           {trip.tripId}}  - {{trip.startDate | date:'medium' }} - {{trip.lineOfBusiness}}</li>
+                           <li ng-repeat="trip in tripsCtrl.trips | orderBy:['startDate',   tripsCtrl.sortByLOB]">
+                           {{trip.tripId}}  - {{trip.startDate | date:'MM/dd/yyyy'}} -{{trip.startDate | date:'HH:mm a'}} - {{trip.lineOfBusiness}}
+                           - {{trip.daysToTravel}} days</li>
                          </ul>
                       </div>
                     </div>
