@@ -11,6 +11,7 @@
 <body>
 	
 	<div class="container_fluid">
+
 		<div class="row">
 			
 			<div id="searchWidget" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -38,25 +39,16 @@
 				
 				<div class="row">
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 bigPitcure-row-1-col-1">
-						<h1>This is my right side</h1>
-						<input type="text" ng-model="postCtrl.emailAddress" placeholder="Email Address"></input>
+
+						<div class="custom-inner-addon">
+								<i class="email-envolope"></i>
+								<input type="text" class="email-address" placeholder="ENTER EMial"></input>
+						</div>
+
+						<input id="emailAddress" type="text" ng-model="postCtrl.emailAddress" placeholder="Email Address"></input>
 						<p ng-click="postCtrl.sendEmail()">Click Here</p>
 						<p ng-show="postCtrl.showResponse"> Service Response : {{postCtrl.responseTxt}}</p>
 					</div>
-
-					<div class="col-sm-8 col-md-8 col-lg-8 bigPitcure-row-1-col-2">
-						<h1>This is my right side</h1>
-						<input type="text" ng-model="postCtrl.emailAddress" placeholder="Email Address"></input>
-						<p ng-click="postCtrl.sendEmail()">Click Here</p>
-						<p ng-show="postCtrl.showResponse"> Service Response : {{postCtrl.responseTxt}}</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-						sffsfsf
-					</div>
-
 				</div>
 
 			</div>
@@ -64,6 +56,7 @@
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.3.15/angular-cookies.js"></script>
 	  <script type="text/javascript" src="../js/searchWidget.js"></script>
 <script>
 

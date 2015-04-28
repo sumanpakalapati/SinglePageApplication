@@ -7,6 +7,30 @@
 		
 	}
 }
+.custom-inner-addon{
+	position: relative;
+}
+.email-envolope {
+	background: white url('../img/AMEX_TLS_Homepage_Sprite.png') no-repeat -67px -25px;
+	position: absolute;
+	top:10px;
+	left:10px;
+	width: 14px;
+}
+.email-address{
+	position: absolute;
+	left: 21px;
+	border-left: 0px;
+}
+
+
+#emailAddress {
+	background: white url('../img/AMEX_TLS_Homepage_Sprite.png') no-repeat -67px -25px;
+	padding-left: 18px;
+	background-position-y: -11px;
+	height: 44px;
+	width: 14px;
+}
 
 .search{
 	background-color: yellow;	
@@ -18,7 +42,7 @@
 .bigPitcure-row-1-col-1 {
 	z-index: 1001;
 	height: 100%;
-	background-color: lightblue;
+	background-color: white;
 
 }
 .bigPitcure-row-1-col-2 {

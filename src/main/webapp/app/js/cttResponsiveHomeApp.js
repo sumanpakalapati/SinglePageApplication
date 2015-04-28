@@ -24,8 +24,8 @@ app.controller("CheetaMailController", [ '$scope', '$http', '$window', function(
 			 var req = {
 					 method : 'POST',
 			 		 url :'',
-			 		 headers : {},
-			 		 data : {email : $scope.emailAddress}
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
+   		 		 data : {email : $scope.emailAddress}
 			 }
 			 $http(req).success(function(data, status, headers, config) {
 				    $scope.showEmailSignUpMessage = false;
@@ -44,7 +44,7 @@ app.controller("CheetaMailController", [ '$scope', '$http', '$window', function(
 	}]);
 
 
-		app.controller("TripControllerV2", [ '$scope', '$http', '$window',
+	app.controller("TripControllerV2", [ '$scope', '$http', '$window',
                             		function($scope, $http, $window) {
 
                             			$scope.currentDate = 'Null';
