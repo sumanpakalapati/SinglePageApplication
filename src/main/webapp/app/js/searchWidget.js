@@ -34,7 +34,7 @@ app.controller("TripsController", ['$http','$window', function($http, $window) {
 				testCtrl.responseTxt  = status;
 			
 		});
-		/* This is custome sort order*/
+		/* This is customer sort order*/
 		testCtrl.sortByLOB = function(trip) {
 		
 			if (trip.lineOfBusiness ==='AIR') {
