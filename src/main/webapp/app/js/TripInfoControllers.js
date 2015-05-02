@@ -7,7 +7,7 @@ angular.module("TripInfoControllers", ['TripsFilter'])
 	var testCtrl = this;
 	testCtrl.trips = [];
 	testCtrl.today = new Date();
-	
+	//https://autocomplete.amextravel.com/search?callback=jsonp1430492796238&type=Airport%2CPOI%2CCity&term=Phoe&match=standard&grouped=true
 	var req = {
 			method : 'GET',
 	 		url :'/SinglePageApplication/trips'
