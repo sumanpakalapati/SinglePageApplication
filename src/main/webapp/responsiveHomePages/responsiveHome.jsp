@@ -17,7 +17,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css"
-	 href="http://localhost:8080/SinglePageApplication/resources/css/ctt_responsive_home.css">
+	 href="http://localhost:8080/SinglePageApplication/app/css/ctt_responsive_home.css">
 
 
 <script type="text/javascript">
@@ -288,7 +288,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="http://localhost:8080/SinglePageApplication/resources/js/cttResponsiveHomeApp.js"></script>
+	<script src="http://localhost:8080/SinglePageApplication/app/js/cttResponsiveHomeApp.js"></script>
 
 </body>
 </html>

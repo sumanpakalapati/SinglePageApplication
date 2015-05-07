@@ -29,7 +29,7 @@ app.controller("TripsController", ['$http','$window', function($http, $window) {
 		 		url :'/SinglePageApplication/trips'
 		}
 		$http(req).success(function(data, status, headers, config) {
-				testCtrl.trips = data;
+				testCtrl.trips = data.tripsInfos;
 		}).error(function(data, status, headers, config) {
 				testCtrl.responseTxt  = status;
 			

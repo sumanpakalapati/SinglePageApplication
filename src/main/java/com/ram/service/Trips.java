@@ -20,14 +20,15 @@ public class Trips {
 	public static String[] lineOfBusiness = {"HOTEL", "AIR","PACKAGE","CAR","CRUISE"};
 
 	@RequestMapping(method = RequestMethod.GET, produces=MediaType.APPLICATION_JSON)
-	public @ResponseBody List<TripInfo> getTrips() {
+	public @ResponseBody TripsResponse getTrips() {
 		System.out.println("Request in Trips controller");
+		TripsResponse tripsResponse = new TripsResponse();
 		List<TripInfo> trips = new ArrayList<TripInfo>();
 		for (int i = 0; i < 10; i++) {
 			trips.add(createNewTrip(i+1));
 		}
-
-		return trips;
+		tripsResponse.setTripsInfos(trips);
+		return tripsResponse;
 	}
 
 	public TripInfo createNewTrip(int tripId) {

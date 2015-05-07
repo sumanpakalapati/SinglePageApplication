@@ -1,25 +1,4 @@
 
-
-@media (min-width: 768px) {
-	#searchWidget {
-		position: fixed;
-	}
-	#bigPitcure {
-		float: right;
-		
-	}
-	.tab-content{
-		width:450px;
-		border: 5px;
-		border-width: 1px;
-		border-style: dotted;
-		z-index: 33333;
-		position: relative;
-		border-radius: 6px;
-		background-color: white;
-	}
-}
-
 #searchWidget {
 	z-index: 1001;
 	top:70px;

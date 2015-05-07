@@ -53,7 +53,7 @@
                          <ul>
                            <li ng-repeat="trip in tripsCtrl.trips | orderBy:['startDate',   tripsCtrl.sortByLOB]">
                            {{trip.tripId}}  - {{trip.startDate | date:'MM/dd/yyyy'}} -{{trip.startDate | date:'HH:mm a'}} - {{trip.lineOfBusiness}}
-                           - {{trip.daysToTravel}} days</li>
+                           - {{trip.daysToTravel}} days - Day is - {{trip.startDate | date:'EEE' | uppercase}}</li>
                          </ul>
                       </div>
                     </div>

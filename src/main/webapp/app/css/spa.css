@@ -1,0 +1,16 @@
+
+#header {
+	border: 1px solid green;
+	text-align: center;
+	background-color: lightblue;
+}
+#content {
+	border: 1px solid black;
+
+}
+#content ul {
+	list-style: none;
+}
+#footer {
+	border: 1px solid blue;
+}

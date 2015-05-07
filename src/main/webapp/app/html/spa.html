@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="US-ASCII">
+<title>CTT Troubleshoot Guid</title>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="../css/spa.css">
+</head>
+<body>
+<div class="container_fluid">
+	<div class="row" id="header">
+		<div class="col-xs-12">
+			<h1>CTT Troubleshoot Guid</h1>
+		</div>
+	</div>
+	<div class="row" id="content" ng-controller="TravelHomeController">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		  <div class="btn-group">
+		    <button type="button" class="btn btn-primary">Travel Home</button>
+		    <button type="button" class="btn btn-primary">Travel Sservices</button>
+		    <div class="btn-group">
+		      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		      NonNGI <span class="caret"></span></button>
+		      <ul class="dropdown-menu" role="menu">
+		        <li><a href="#">Batch Jobs</a></li>
+		        <li><a href="#">ADT</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-8">
+			
+		</div>
+	</div>
+	<div class="row" id="footer">
+		<div class="col-xs-12">
+			<h1>Footer</h1>
+		</div>
+	</div>
+	
+	<div class="row" ng-controller="LoadConfigurationController as ConfigCtrl" ng-init="ConfigCtrl.userId='Vedh'">
+		<div class="col-xs-12">
+			<h1>Footer -2</h1>
+			<input type="text" name="userId" ng-model="ConfigCtrl.userId" ></input>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.3.15/angular-cookies.js"></script>
+<script type="text/javascript" src="../js/spa/spa.js?sad=333f"></script>
+</body>
+</html>
