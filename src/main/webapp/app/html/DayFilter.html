@@ -50,11 +50,15 @@
                            <p>
                           {{ tripsCtrl.today | date:'MM/dd/yyyy' }}
                         </p>
-                         <ul>
-                           <li ng-repeat="trip in tripsCtrl.trips | orderBy:['startDate',   tripsCtrl.sortByLOB]">
-                           {{trip.tripId}}  - {{trip.startDate | date:'MM/dd/yyyy'}} -{{trip.startDate | date:'HH:mm a'}} - {{trip.lineOfBusiness}}
-                           - {{trip.daysToTravel}} days - Day is - {{trip.startDate | date:'EEE' | uppercase}}</li>
-                         </ul>
+                         <p>Trip Count - {{tripsCtrl.tripCount}} </p>
+                         <div ng-repeat="trip in tripsCtrl.trips | orderBy:['startDate',   tripsCtrl.sortByLOB]">  
+                            	<p>
+	                             {{trip.tripId}}  - {{trip.startDate | date:'MM/dd/yyyy'}} -{{trip.startDate | date:'HH:mm'}} - {{trip.lineOfBusiness}}
+	                           - {{trip.daysToTravel}} days - Day is - {{trip.startDate | date:'EEE' | uppercase}}
+	                           - Time - {{trip.startDate | date:'HH:MM'}}
+	                           </p>
+                           </div>
+                       
                       </div>
                     </div>
                   </div>

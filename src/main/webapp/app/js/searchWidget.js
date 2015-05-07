@@ -23,6 +23,9 @@ app.controller("TripsController", ['$http','$window', function($http, $window) {
 		var testCtrl = this;
 		testCtrl.trips = [];
 		testCtrl.today = new Date();
+		testCtrl.showTrip = 0;
+		testCtrl.tripCount = 0;
+		tripCtrl.currentTrip = {};
 		
 		var req = {
 				method : 'GET',
@@ -30,6 +33,8 @@ app.controller("TripsController", ['$http','$window', function($http, $window) {
 		}
 		$http(req).success(function(data, status, headers, config) {
 				testCtrl.trips = data.tripsInfos;
+				testCtrl.tripCount = testCtrl.trips.length;
+				tripCtrl.currentTrip = testCtrl.trips[0];
 		}).error(function(data, status, headers, config) {
 				testCtrl.responseTxt  = status;
 			
