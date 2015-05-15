@@ -31,6 +31,7 @@ app.controller("TripsController", ['$http','$window', '$filter', function($http,
 		
 		var req = {
 				method : 'GET',
+			 	headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
 		 		url :'http://localhost:8080/SinglePageApplication/trips'
 		}
 		$http(req).success(function(data, status, headers, config) {
