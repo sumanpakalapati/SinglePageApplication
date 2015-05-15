@@ -18,23 +18,25 @@ app.config(function($httpProvider) {
 	
 });
 
-app.controller("TripsController", ['$http','$window', function($http, $window) {
+app.controller("TripsController", ['$http','$window', '$filter', function($http, $window, $filter) {
 	
 		var testCtrl = this;
+		var orderBy = $filter('orderBy');
+
 		testCtrl.trips = [];
 		testCtrl.today = new Date();
 		testCtrl.showTrip = 0;
 		testCtrl.tripCount = 0;
-		tripCtrl.currentTrip = {};
+		testCtrl.currentTrip = {};
 		
 		var req = {
 				method : 'GET',
-		 		url :'/SinglePageApplication/trips'
+		 		url :'http://localhost:8080/SinglePageApplication/trips'
 		}
 		$http(req).success(function(data, status, headers, config) {
-				testCtrl.trips = data.tripsInfos;
-				testCtrl.tripCount = testCtrl.trips.length;
-				tripCtrl.currentTrip = testCtrl.trips[0];
+				testCtrl.trips = $filter('orderBy')(data.tripsInfos, ["startDate",	testCtrl.sortByLOB]);
+				testCtrl.currentTrip = testCtrl.trips[0];
+		
 		}).error(function(data, status, headers, config) {
 				testCtrl.responseTxt  = status;
 			
@@ -58,6 +60,7 @@ app.controller("TripsController", ['$http','$window', function($http, $window) {
 			
 		};
 	
+
 
 }]);
 

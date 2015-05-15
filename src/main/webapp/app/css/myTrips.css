@@ -1,0 +1,34 @@
+.lhrFutureTrips {
+ 	background-color: white;
+ 	margin-left: 100px;
+ 	border: 1px solid green;
+}
+.tripTitle{
+	margin-left: 20px;
+}
+.dayText{
+	font-size: 39px;
+	font-family: Bentonsansextracomp;
+	color: #4D4F53;
+}
+.tripDateDiv {
+	width: 100px;
+	height: 100px;
+	background: #F3F3F3;
+	margin-left: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	text-align: center;
+	float: left;
+}
+.tripDetailsDiv {
+	float: left;
+	background: #F3F3F3;
+	margin-left: 20px;
+	width: 205px;
+	height: 100px;
+}
+.extra {
+	clear: both;
+}
