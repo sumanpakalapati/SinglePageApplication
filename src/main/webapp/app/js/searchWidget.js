@@ -1,6 +1,7 @@
 var app = angular.module("searchWidget", []);
 
 app.config(function($httpProvider) {
+<<<<<<< HEAD
 
 	//Reset headers to avoid OPTIONS request (aka preflight)
   $httpProvider.defaults.headers.common = {};
@@ -8,6 +9,8 @@ app.config(function($httpProvider) {
   $httpProvider.defaults.headers.put = {};
   $httpProvider.defaults.headers.patch = {};
 
+=======
+>>>>>>> origin/master
 	$httpProvider.defaults.transformRequest = function(data) {
 		 if (data === undefined) {
 			 return data;
@@ -18,6 +21,7 @@ app.config(function($httpProvider) {
 	
 });
 
+<<<<<<< HEAD
 app.controller("TripsController", ['$http','$window', '$filter', function($http, $window, $filter) {
 	
 		var testCtrl = this;
@@ -86,5 +90,29 @@ app.controller("PostParametersController", ['$http','$window', function($http, $
 					testCtrl.responseTxt  = status;
 			});
 		};
+=======
+app.controller("TestPostParams", ['$http','$window', function($http, $window) {
+
+
+	this.sendEmail = function() {
+
+		 var req = {
+					 method : 'POST',
+			 		 url :'http://localhost:8080/SinglePageApplication/hello',
+			 		 headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
+    				 data : {email : this.emailAddress}
+			 }
+			 $http(req).success(function(data, status, headers, config) {
+					this.res = status;
+					this.ram = status;
+
+			 }).error(function(data, status, headers, config) {
+					this.res = status;
+
+			 });
+
+
+	}
+>>>>>>> origin/master
 
 }]);

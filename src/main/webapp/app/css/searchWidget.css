@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (min-width: 768px) {
 	#searchWidget {
 		position: fixed;
@@ -50,6 +51,15 @@
 	background-color: lightgreen;
 
 }
+=======
+.search{
+	background-color: white;
+	width: 100%;
+	height: 50%%;
+	border: 1px solid gray;
+}
+
+>>>>>>> origin/master
 /* enable absolute positioning */
 .inner-addon { 
     position: relative; 
