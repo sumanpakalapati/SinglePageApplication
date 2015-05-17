@@ -151,6 +151,12 @@ angular.module('myTrips').directive('showAddress', function () {
     };
 });
 
+angular.module('myTrips').directive('showCollapsedAddress', function () {
+    return {
+        template: '{{currentTrip.address.city |uppercase}}, {{currentTrip.address.state | uppercase}}'
+    };
+});
+
 angular.module('myTrips').directive('showRoomDetails', function () {
     return {
         template: '{{currentTrip.noRooms}} Room, {{currentTrip.noOfNights}} Nights'

@@ -1,7 +1,5 @@
 .nonCollapsedTripDetails {
 	background-color: white;
-	border: 1px dotted;
-	float: left;
 }
 .nonCollapsedTripDetails ul li {
 	display: inline-block;
@@ -137,6 +135,73 @@
 	height: 11px;
 	margin-top: 60px;
   	margin-left: 10px;
+}
+
+
+
+
+.collapsedTripDetails {
+	height: 103px;
+}
+.collapsedTripDetails .tripDetails {
+	float: left;
+	background-color: #F3F3F3;
+	margin-left: 3px;
+	margin-top: 15px;
+	float: left;
+	width: 390px;
+	height: 103px;
+}
+.collapsedTripDetails .tripDetails .title {
+	  margin-top: 15px;
+  margin-left: 20px;
+}
+.collapsedTripDetails .tripDetails .tripDateDiv {
+ 	 margin-left: 20px;
+ 	 float: left;
+}
+.collapsedTripDetails .tripDetails .tripDateDiv .header{
+	  margin-top: 0px;
+  	margin-bottom: 0px;
+}
+.collapsedTripDetails .tripDetails .tripDateDiv .footer{
+	  margin-top: 0px;
+}
+.rightAlign {
+  float: right;
+  margin-right: 20px;
+}
+
+.collapsedTripDetails .airTripDetails ,
+.collapsedTripDetails .hotelTripDetails,
+.collapsedTripDetails .carTripDetails,
+.collapsedTripDetails .cruiseTripDetails {
+	  float: right;
+ 	  margin-right: 20px;
+}
+
+.airTripDetails .departs .midContent{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.airTripDetails .arrives .midContent{
+	margin-left: 10px;
+  margin-right: 3px;
+  font-weight: bold;
+}
+
+.airTripDetails .departs {
+	margin-top: 15px;
+  font-size: 12px;
+  font-family: arial;
+  font-weight: normal;
+}
+.airTripDetails .arrives {
+	margin-top: 5px;
+  font-size: 12px;
+  font-family: arial;
+  font-weight: normal;
 }
 
 
