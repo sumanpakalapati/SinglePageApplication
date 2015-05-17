@@ -48,12 +48,22 @@
   color: #4D4F53 !important
 }
 
-.nonCollapsedAirTrip .airTripDetails{
+.nonCollapsedAirTrip .airTripDetails {
 	background-color: #F3F3F3;
 	float: left;
   	margin-left: 20px;
  	margin-top: 15px;
 	margin-bottom: 0px;
+	height: 103px;
+}
+.nonCollapsedAirTrip .hotelTripDetails {
+	background-color: #F3F3F3;
+	float: left;
+  	margin-left: 20px;
+ 	margin-top: 15px;
+	margin-bottom: 0px;
+	height: 103px;
+	width: 260px;
 }
 .departure, .arrival{
   	margin-top: 0px !important;

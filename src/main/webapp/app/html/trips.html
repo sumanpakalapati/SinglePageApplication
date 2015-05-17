@@ -21,7 +21,7 @@
 			<p class="footer" ng-bind="currentTrip.startDate  | date:'MM/dd/yyyy'"></p>
 		</div>
 		
-		<div class="airTripDetails">
+		<div class="airTripDetails" ng-show="showAirDetails">
 			
 			<div class="dateAirTrip departure">
 				<p class="header">DEPARTUR</p>
@@ -36,8 +36,14 @@
 				<p class="dayText" ng-bind="currentTrip.endAirPortCode"></p>
 				<p class="footer" ng-bind="currentTrip.endDate | date:'hh:mma'"></p>
 			</div>
+		</div>
+
+		<div class="hotelTripDetails" ng-show="showHotelDetails">
+			
+			<p>Hotel</p>
 
 		</div>
+
 		<div class="nextTripActiveImg" ng-show="isNextTripAvailable" ng-click="nextTrip()"></div>
 		<div class="nextTripInActiveImg" ng-hide="isNextTripAvailable"></div>
 	</div>
