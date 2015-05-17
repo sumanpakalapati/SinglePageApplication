@@ -56,7 +56,8 @@
 	margin-bottom: 0px;
 	height: 103px;
 }
-.nonCollapsedAirTrip .hotelTripDetails {
+.nonCollapsedAirTrip .hotelTripDetails ,.nonCollapsedAirTrip .carTripDetails
+,.nonCollapsedAirTrip .cruiseTripDetails {
 	background-color: #F3F3F3;
 	float: left;
   	margin-left: 20px;
