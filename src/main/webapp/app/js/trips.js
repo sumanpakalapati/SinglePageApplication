@@ -22,7 +22,7 @@ function tripsController($scope, $window,$filter) {
 				 	"addressLine1" :"4750 E union HIlls dr",
 				 	"city" : "phoenix",
 				 	"state" : "Ariozna",
-				 	"Country" :"USA"
+				 	"country" :"USA"
 				},
 				"noRooms": "4",
 				"noOfNights" : "4"
@@ -31,18 +31,30 @@ function tripsController($scope, $window,$filter) {
 				"endDate" : "2015-06-15T13:07:05",
 				"startAirPortCode":"PHX",
 				"endAirPortCode":"DHL",
+				"pickUpAirPort" :"Newark Liberty Intl Airport",
+				address : {
+				 	"addressLine1" :"4750 E union HIlls dr",
+				 	"city" : "phoenix",
+				 	"state" : "Ariozna",
+				 	"country" :"USA"
+				},
+				"noOfDoors":"2",
+				"noOfPassengers" :"4",
 				"productCode" :"CAR"
 			}, {
 				"startDate" : "2015-05-19T18:05:05",
 				"endDate" : "2015-06-15T16:05:05",
 				"startAirPortCode":"PHX",
 				"endAirPortCode":"HYD",
-				"productCode" :"HOTEL"
+				"productCode" :"AIR"
 			}, {
 				"startDate" : "2015-05-19T18:05:05",
 				"endDate" : "2015-06-15T16:05:05",
 				"startAirPortCode":"PHX",
 				"endAirPortCode":"HYD",
+				"cruiseLineName":"Celebrity Cruise Line",
+				"cabinType" :"Cabin Balcony",
+				"cruiseDestination" : "FORT Lauderdale",
 				"productCode" :"CRUISE"
 			}
 	];
@@ -72,7 +84,7 @@ function tripsController($scope, $window,$filter) {
 			$scope.showCarDetails = false;
 			$scope.showCruiseDetails = false;
 		} else if ($scope.currentTrip.productCode == 'CAR') {
-			$scope.label = 'PICK-UP';
+			$scope.label = 'PICK UP';
 			$scope.showAirDetails = false;
 			$scope.showHotelDetails = false;
 			$scope.showCarDetails = true;
@@ -132,3 +144,27 @@ function tripsController($scope, $window,$filter) {
 	};
 	$scope.changeLabel();
 };
+
+angular.module('myTrips').directive('showAddress', function () {
+    return {
+        template: '{{currentTrip.address.addressLine1 |uppercase}} <br /> {{currentTrip.address.city |uppercase}}, {{currentTrip.address.state | uppercase}}'
+    };
+});
+
+angular.module('myTrips').directive('showRoomDetails', function () {
+    return {
+        template: '{{currentTrip.noRooms}} Room, {{currentTrip.noOfNights}} Nights'
+    };
+});
+
+angular.module('myTrips').directive('showCarPickUpLocation', function () {
+    return {
+           template: '{{currentTrip.address.state | uppercase}}, {{currentTrip.address.country}} ({{currentTrip.startAirPortCode}})'
+  };
+});
+
+angular.module('myTrips').directive('showPassengerDetails', function () {
+    return {
+        template: '{{currentTrip.noOfDoors}} Doors, {{currentTrip.noOfPassengers}} Passengers'
+    };
+});

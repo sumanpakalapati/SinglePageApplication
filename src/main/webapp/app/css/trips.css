@@ -1,33 +1,34 @@
-.nonCollapsedAirTrip {
+.nonCollapsedTripDetails {
 	background-color: white;
 	border: 1px dotted;
 	float: left;
 }
-.nonCollapsedAirTrip ul li {
+.nonCollapsedTripDetails ul li {
 	display: inline-block;
 	list-style: none;
 }
-.nonCollapsedAirTrip ul {
+.nonCollapsedTripDetails ul {
 	padding-left: 0px !important;
   	margin-left: 20px;
   	margin-top: 0px;
   	margin-bottom: 0px;
 }
-.nonCollapsedAirTrip ul li p {
+.nonCollapsedTripDetails ul li p {
 	font-family: BENTONSANSEXTRACOMP;
 	font-size: 21px;
 	color: #4D4F53;
 	margin-top: 0px;
   	margin-bottom: 0px;
 }
-.nonCollapsedAirTrip .dateAirTrip {
+.nonCollapsedTripDetails .tripDateDiv {
 	background-color: #F3F3F3;
 	margin-left: 3px;
 	margin-top: 15px;
 	float: left;
 	width: 120px;
+	height: 103px;
 }
-.nonCollapsedAirTrip .dateAirTrip p {
+.nonCollapsedTripDetails .tripDateDiv p {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left: 20px;
@@ -36,19 +37,8 @@
 	font-size: 12px;
 	color: #8A8AAD;
 }
-.dateAirTrip .header { 
-	padding-top: 15px;
-}
-.dateAirTrip .footer{
-	padding-bottom: 15px;
-}
-.dateAirTrip .dayText {
-  font-size: 39px !important;
-  font-family: BENTONSANSEXTRACOMP !important;
-  color: #4D4F53 !important
-}
 
-.nonCollapsedAirTrip .airTripDetails {
+.nonCollapsedTripDetails .airTripDetails {
 	background-color: #F3F3F3;
 	float: left;
   	margin-left: 20px;
@@ -56,8 +46,9 @@
 	margin-bottom: 0px;
 	height: 103px;
 }
-.nonCollapsedAirTrip .hotelTripDetails ,.nonCollapsedAirTrip .carTripDetails
-,.nonCollapsedAirTrip .cruiseTripDetails {
+.nonCollapsedTripDetails .hotelTripDetails,
+.nonCollapsedTripDetails .carTripDetails,
+.nonCollapsedTripDetails .cruiseTripDetails {
 	background-color: #F3F3F3;
 	float: left;
   	margin-left: 20px;
@@ -65,6 +56,44 @@
 	margin-bottom: 0px;
 	height: 103px;
 	width: 260px;
+}
+.tripDateDiv .header { 
+	padding-top: 15px;
+}
+.tripDateDiv .footer{
+	padding-bottom: 15px;
+}
+.tripDateDiv .dayText {
+  font-size: 39px !important;
+  font-family: BENTONSANSEXTRACOMP !important;
+  color: #4D4F53 !important
+}
+
+.headerDetails {
+	font-family: ARIAL;
+	font-weight: bold;
+	font-size: 12px;
+	color: #6F6F6F;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+.middleContent {
+	font-family: ARIAL;
+	font-size: 12px;
+	color: #6F6F6F;
+	margin-left: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.footerDetails{
+  font-family: ARIAL;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6F6F6F;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .departure, .arrival{
   	margin-top: 0px !important;

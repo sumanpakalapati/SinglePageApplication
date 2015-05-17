@@ -6,24 +6,26 @@
 </head>
 <body>
 
-	<div class="nonCollapsedAirTrip" ng-controller="tripsController">
+	<div class="nonCollapsedTripDetails" ng-controller="tripsController">
 		<div class="title">
 			<ul>
 				<li><p>REVIEW YOUR UPCOMING TRAVEL</p></li>
 				<li><a href="">View Details</a></li>
 			</ul>
 		</div>
-	<div class="previousTripActiveImg" ng-show="isPreviousTripAvailable" ng-click="previousTrip()"></div>
-	<div class="previousTripInActiveImg"  ng-hide="isPreviousTripAvailable"></div>
-		<div class="dateAirTrip">
-			<p class="header" ng-bind="label"></p>
+
+		<div class="previousTripActiveImg" ng-show="isPreviousTripAvailable" ng-click="previousTrip()"></div>
+		<div class="previousTripInActiveImg"  ng-hide="isPreviousTripAvailable"></div>
+		
+		<div class="tripDateDiv">
+			<p class="header"  ng-bind="label"></p>
 			<p class="dayText" ng-bind ="currentTrip.startDate  | date:'EEE' | uppercase"></p>
-			<p class="footer" ng-bind="currentTrip.startDate  | date:'MM/dd/yyyy'"></p>
+			<p class="footer"  ng-bind="currentTrip.startDate  | date:'MM/dd/yyyy'"></p>
 		</div>
 		
 		<div class="airTripDetails" ng-show="showAirDetails">
 			
-			<div class="dateAirTrip departure">
+			<div class="tripDateDiv departure">
 				<p class="header">DEPARTUR</p>
 				<p class="dayText" ng-bind="currentTrip.startAirPortCode"></p>
 				<p class="footer"  ng-bind="currentTrip.startDate | date:'hh:mma'"></p>
@@ -31,30 +33,39 @@
 
 			<div class="tripSeparatorArrowImg"></div>
 
-			<div class="dateAirTrip arrival">
+			<div class="tripDateDiv arrival">
 				<p class="header">ARRIVAL</p>
 				<p class="dayText" ng-bind="currentTrip.endAirPortCode"></p>
 				<p class="footer" ng-bind="currentTrip.endDate | date:'hh:mma'"></p>
 			</div>
+
 		</div>
 
 		<div class="hotelTripDetails" ng-show="showHotelDetails">
 			
-			<p>Hotel</p>
+			<p class="headerDetails" ng-bind="currentTrip.hotelName"></p>
+			<p class="middleContent" show-address></p>
+			<p class="footerDetails" show-room-details></p>
 
 		</div>
+
 		<div class="carTripDetails" ng-show="showCarDetails">
 			
-			<p>Car</p>
+			<p class="headerDetails" ng-bind="currentTrip.pickUpAirPort"></p>
+			<p class="middleContent" show-car-pick-up-location></p>
+			<p class="footerDetails" show-passenger-details></p>
 
 		</div>
+
 		<div class="cruiseTripDetails" ng-show="showCruiseDetails">
-			
-			<p>Cruise</p>
-
+			<p class="headerDetails" ng-bind="currentTrip.cruiseLineName"></p>
+			<p class="middleContent" ng-bind="currentTrip.cruiseDestination | uppercase"></p>
+			<p class="footerDetails" ng-bind="currentTrip.cabinType"></p>
 		</div>
+
 		<div class="nextTripActiveImg" ng-show="isNextTripAvailable" ng-click="nextTrip()"></div>
 		<div class="nextTripInActiveImg" ng-hide="isNextTripAvailable"></div>
+		
 	</div>
 
 
