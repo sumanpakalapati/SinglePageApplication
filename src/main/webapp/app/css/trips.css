@@ -25,6 +25,7 @@
 	margin-left: 3px;
 	margin-top: 15px;
 	float: left;
+	width: 120px;
 }
 .nonCollapsedAirTrip .dateAirTrip p {
 	margin-top: 0px;
@@ -47,7 +48,7 @@
   color: #4D4F53 !important
 }
 
-.nonCollapsedAirTrip .airTripDetails {
+.nonCollapsedAirTrip .airTripDetails{
 	background-color: #F3F3F3;
 	float: left;
   	margin-left: 20px;
@@ -65,7 +66,7 @@
   float: left;
   margin-top: 45px;
 }
-.nextTripArrowImg {
+.nextTripActiveImg {
 	float: left;
 	background: url('../img/homepage-sprite.png') no-repeat -652px -384px;
 	width: 7px;
@@ -73,7 +74,15 @@
 	margin-top: 60px;
   	margin-left: 3px;
 }
-.previousTripArrowImg {
+.nextTripInActiveImg {
+	float: left;
+	background: url('../img/homepage-sprite.png') no-repeat -629px -384px;
+	width: 7px;
+	height: 11px;  
+	margin-top: 60px;
+  	margin-left: 3px;
+}
+.previousTripActiveImg {
 	float: left;
 	background: url('../img/homepage-sprite.png') no-repeat -575px -384px;
 	width: 7px;
@@ -81,7 +90,14 @@
 	margin-top: 60px;
   	margin-left: 10px;
 }
-
+.previousTripInActiveImg {
+	float: left;
+	background: url('../img/homepage-sprite.png') no-repeat -601px -384px;
+	width: 7px;
+	height: 11px;
+	margin-top: 60px;
+  	margin-left: 10px;
+}
 
 
 
