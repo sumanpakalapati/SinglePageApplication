@@ -1,0 +1,87 @@
+.nonCollapsedAirTrip {
+	background-color: white;
+	border: 1px dotted;
+	float: left;
+}
+.nonCollapsedAirTrip ul li {
+	display: inline-block;
+	list-style: none;
+}
+.nonCollapsedAirTrip ul {
+	padding-left: 0px !important;
+  	margin-left: 20px;
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+}
+.nonCollapsedAirTrip ul li p {
+	font-family: BENTONSANSEXTRACOMP;
+	font-size: 21px;
+	color: #4D4F53;
+	margin-top: 0px;
+  	margin-bottom: 0px;
+}
+.nonCollapsedAirTrip .dateAirTrip {
+	background-color: #F3F3F3;
+	margin-left: 3px;
+	margin-top: 15px;
+	float: left;
+}
+.nonCollapsedAirTrip .dateAirTrip p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: ARIAL;
+	font-size: 12px;
+	color: #8A8AAD;
+}
+.dateAirTrip .header { 
+	padding-top: 15px;
+}
+.dateAirTrip .footer{
+	padding-bottom: 15px;
+}
+.dateAirTrip .dayText {
+  font-size: 39px !important;
+  font-family: BENTONSANSEXTRACOMP !important;
+  color: #4D4F53 !important
+}
+
+.nonCollapsedAirTrip .airTripDetails {
+	background-color: #F3F3F3;
+	float: left;
+  	margin-left: 20px;
+ 	margin-top: 15px;
+	margin-bottom: 0px;
+}
+.departure, .arrival{
+  	margin-top: 0px !important;
+  	margin-left: 0px !important;
+}
+.tripSeparatorArrowImg {
+  background: url('../img/homepage-sprite.png') no-repeat -259px -289px;
+  width: 20px;
+  height: 10px;
+  float: left;
+  margin-top: 45px;
+}
+.nextTripArrowImg {
+	float: left;
+	background: url('../img/homepage-sprite.png') no-repeat -652px -384px;
+	width: 7px;
+	height: 11px;  
+	margin-top: 60px;
+  	margin-left: 3px;
+}
+.previousTripArrowImg {
+	float: left;
+	background: url('../img/homepage-sprite.png') no-repeat -575px -384px;
+	width: 7px;
+	height: 11px;
+	margin-top: 60px;
+  	margin-left: 10px;
+}
+
+
+
+
