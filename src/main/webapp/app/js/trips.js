@@ -1,6 +1,6 @@
 
 angular.module('myTrips', []).controller('tripsController', tripsController);
-/*1528108699 */
+
 tripsController.$inject = ['$scope', '$window', '$filter'];
 function tripsController($scope, $window,$filter) {
 	$scope.futurTrips = [ 
@@ -68,33 +68,29 @@ function tripsController($scope, $window,$filter) {
 	$scope.isPreviousTripAvailable =  false;
 	$scope.isNextTripAvailable = $scope.noOfTrips > 1 ? true : false;
 
+	$scope.setDisplayFlag = function (isAir, isHotel, isCar, isCruise) {
+			$scope.showAirDetails = isAir;
+			$scope.showHotelDetails = isHotel;
+			$scope.showCarDetails = isCar;
+			$scope.showCruiseDetails = isCruise;
+	}
 
 	$scope.changeLabel = function() {
 		if ($scope.currentTrip.productCode == 'AIR') {
 			$scope.label = 'DATE';
-			$scope.showAirDetails = true;
-			$scope.showHotelDetails = false;
-			$scope.showCarDetails = false;
-			$scope.showCruiseDetails = false;
-
+			$scope.setDisplayFlag(true, false,false,false);
 		} else if ($scope.currentTrip.productCode == 'HOTEL') {
 			$scope.label = 'CHECK-IN';
-			$scope.showAirDetails = false;
-			$scope.showHotelDetails = true;
-			$scope.showCarDetails = false;
-			$scope.showCruiseDetails = false;
+			$scope.setDisplayFlag(false, true,false,false);
+		
 		} else if ($scope.currentTrip.productCode == 'CAR') {
 			$scope.label = 'PICK UP';
-			$scope.showAirDetails = false;
-			$scope.showHotelDetails = false;
-			$scope.showCarDetails = true;
-			$scope.showCruiseDetails = false;
+			$scope.setDisplayFlag(false, false,true,false);
+		
 		} else if ($scope.currentTrip.productCode == 'CRUISE') {
 			$scope.label = 'SAILING';
-			$scope.showAirDetails = false;
-			$scope.showHotelDetails = false;
-			$scope.showCarDetails = false;
-			$scope.showCruiseDetails = true;
+			$scope.setDisplayFlag(false, false,false,true);
+
 		}
 	}
 

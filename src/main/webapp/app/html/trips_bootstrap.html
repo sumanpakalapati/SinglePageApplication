@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="myTrips">
+<head>
+	<title>Trips Wiht bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="../css/trips.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container_fluid">
+
+		<div class="row" ng-controller="tripsController">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg4">
+
+				<div class="row">
+					<div class="col-xs-12">
+							<div class="title">
+								<ul>
+									<li><p>REVIEW YOUR UPCOMING TRAVEL</p></li>
+									<li><a href="">View Details</a></li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="previousTripActiveImg" ng-show="isPreviousTripAvailable" ng-click="previousTrip()"></div>
+						<div class="previousTripInActiveImg"  ng-hide="isPreviousTripAvailable"></div>
+						<div class="tripDateDiv">
+							<p class="header"  ng-bind="label"></p>
+							<p class="dayText" ng-bind ="currentTrip.startDate  | date:'EEE' | uppercase"></p>
+							<p class="footer"  ng-bind="currentTrip.startDate  | date:'MM/dd/yyyy'"></p>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div ng-show="showAirDetails">
+							
+							<div class="tripDateDiv departure">
+								<p class="header">DEPARTUR</p>
+								<p class="dayText" ng-bind="currentTrip.startAirPortCode"></p>
+								<p class="footer"  ng-bind="currentTrip.startDate | date:'hh:mma'"></p>
+							</div>
+
+							<div class="tripSeparatorArrowImg"></div>
+
+							<div>
+								<p class="header">ARRIVAL</p>
+								<p class="dayText" ng-bind="currentTrip.endAirPortCode"></p>
+								<p class="footer" ng-bind="currentTrip.endDate | date:'hh:mma'"></p>
+							</div>
+
+						</div>
+
+						<div class="nextTripActiveImg" ng-show="isNextTripAvailable" ng-click="nextTrip()"></div>
+						<div class="nextTripInActiveImg" ng-hide="isNextTripAvailable"></div>
+					</div>
+				</div>
+
+
+
+
+			</div> <!-- Main Column ending -->
+
+		</div> <!-- First row ending -->
+
+	</div> <!-- Container ending. -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script type="text/javascript" src="../js/trips.js"></script>
+</body>
+</html>
