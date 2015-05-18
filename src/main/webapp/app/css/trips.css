@@ -76,6 +76,7 @@
 	margin-bottom: 0px;
 	margin-top: 15px;
 }
+
 .middleContent {
 	font-family: ARIAL;
 	font-size: 12px;
@@ -84,6 +85,23 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+
+.collapsedMiddleContent {
+	font-family: ARIAL;
+	font-size: 12px;
+	color: #6F6F6F;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.collapsedHeaderDetails {
+	font-family: ARIAL;
+	font-weight: bold;
+	font-size: 12px;
+	color: #6F6F6F;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
 .footerDetails{
   font-family: ARIAL;
   font-size: 12px;
@@ -157,15 +175,37 @@
   margin-left: 20px;
 }
 .collapsedTripDetails .tripDetails .tripDateDiv {
- 	 margin-left: 20px;
- 	 float: left;
+  margin-left: 20px;
+  float: left;
+  margin-right: 20px;
+
 }
 .collapsedTripDetails .tripDetails .tripDateDiv .header{
-	  margin-top: 0px;
-  	margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 3px;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 12px;
+  color: #6F6F6F;
 }
-.collapsedTripDetails .tripDetails .tripDateDiv .footer{
-	  margin-top: 0px;
+}
+.collapsedTripDetails .tripDetails .tripDateDiv .footerDay
+{
+  margin-top: 0px;
+  font-family: arial;
+  font-weight: bold;
+  color: #4D4F53;
+  font-size: 12px;
+}
+.collapsedTripDetails .tripDetails .tripDateDiv .footerDate
+{
+  margin-top: 0px;
+  font-family: arial;
+  font-weight: normal;
+  color: #6F6F6F;
+  font-size: 12px;
 }
 .rightAlign {
   float: right;
@@ -176,8 +216,8 @@
 .collapsedTripDetails .hotelTripDetails,
 .collapsedTripDetails .carTripDetails,
 .collapsedTripDetails .cruiseTripDetails {
-	  float: right;
- 	  margin-right: 20px;
+  margin-left: 20px;
+  float: left;
 }
 
 .airTripDetails .departs .midContent{
@@ -189,20 +229,32 @@
 	margin-left: 10px;
   margin-right: 3px;
   font-weight: bold;
-}
 
+}
+.hotelTripDetails .middleContent,
+.carTripDetails .middleContent,
+cruiseTripDetails .middleContent {
+	  padding-top: 5px;
+}
 .airTripDetails .departs {
 	margin-top: 15px;
   font-size: 12px;
   font-family: arial;
   font-weight: normal;
+  color: #6F6F6F;
 }
 .airTripDetails .arrives {
-	margin-top: 5px;
+  margin-top: 5px;
   font-size: 12px;
   font-family: arial;
   font-weight: normal;
+    color: #6F6F6F;
 }
-
+.verticalLine {
+  border-left: 1px solid #D5D5D5;
+  float: left;
+  height: 35px;
+  margin-top: 15px;
+}
 
 
