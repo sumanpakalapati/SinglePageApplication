@@ -2,16 +2,34 @@
 angular.module('myTrips', []).controller('tripsController', tripsController);
 
 tripsController.$inject = ['$scope', '$window', '$filter'];
+
 function tripsController($scope, $window,$filter) {
+
 	$scope.futurTrips = [ 
-			{
+		
+		{
 				"startDate" : "2015-05-14T14:00:05",
 				"endDate" : "2015-05-25T13:03:05",
 				"startAirPortCode" : "SFO",
 				"endAirPortCode":"LAX",
 				"productCode":"AIR"
 
-			}, {
+			},  {
+				"startDate" : "2015-05-14T14:13:05",
+				"endDate" : "2015-06-15T13:07:05",
+				"startAirPortCode":"PHX",
+				"endAirPortCode":"DHL",
+				"pickUpAirPort" :"Newark Liberty Intl Airport",
+				address : {
+				 	"addressLine1" :"4750 E union HIlls dr",
+				 	"city" : "phoenix",
+				 	"state" : "Ariozna",
+				 	"country" :"USA"
+				},
+				"noOfDoors":"2",
+				"noOfPassengers" :"4",
+				"productCode" :"CAR"
+			},{
 				"startDate" : "2015-05-14T12:00:05",
 				"endDate" : "2015-06-25T13:05:05",
 				"startAirPortCode":"PHX",
@@ -56,17 +74,18 @@ function tripsController($scope, $window,$filter) {
 				"cabinType" :"Cabin Balcony",
 				"cruiseDestination" : "FORT Lauderdale",
 				"productCode" :"CRUISE"
-			}
+			} 
 	];
+
 
 	$scope.futurTrips = $filter('orderBy')($scope.futurTrips, ["startDate | date:'MM/dd/yyyy'",	$scope.sortByLOB]);
 
 	$scope.currentTrip = $scope.futurTrips[0];
 	$scope.tripIndex = 0;
 	$scope.noOfTrips = $scope.futurTrips.length;
-
 	$scope.isPreviousTripAvailable =  false;
 	$scope.isNextTripAvailable = $scope.noOfTrips > 1 ? true : false;
+	$scope.isTripsAvailable = $scope.noOfTrips == 0 ? false : true;
 
 	$scope.setDisplayFlag = function (isAir, isHotel, isCar, isCruise) {
 			$scope.showAirDetails = isAir;
@@ -138,7 +157,9 @@ function tripsController($scope, $window,$filter) {
 			}				
 			
 	};
-	$scope.changeLabel();
+	if ($scope.isTripsAvailable) {
+		$scope.changeLabel();
+	}
 };
 
 angular.module('myTrips').directive('showAddress', function () {
@@ -149,7 +170,7 @@ angular.module('myTrips').directive('showAddress', function () {
 
 angular.module('myTrips').directive('showCollapsedAddress', function () {
     return {
-        template: '{{currentTrip.address.city |uppercase}}, {{currentTrip.address.state | uppercase}}'
+        template: '<h1> {{currentTrip.address.city |uppercase}}, {{currentTrip.address.state | uppercase}} </h2>'
     };
 });
 

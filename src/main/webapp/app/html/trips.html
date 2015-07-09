@@ -4,10 +4,27 @@
 	<title>Trips</title>
 	<link rel="stylesheet" type="text/css" href="../css/trips.css">
 </head>
-<body ng-controller="tripsController">
+<body>
 
-	<div class="nonCollapsedTripDetails" >
-	
+<div ng-controller="tripsController" >
+
+
+  <div id="hotelCreditDiv" ng-hide="isTripsAvailable">
+
+  	 <div class="tagImg">
+
+  	 </div>
+  	 <div class="hotelCreditContent">
+ 		<span> $50 HOTEL CREDIT </span>
+ 		<span>Get a 50 credit during your staty</span>
+ 		<span> <a href="">Learn More</a></span>
+  	 </div>
+  	
+  </div>
+
+  <div id="myTripsDiv" ng-show="isTripsAvailable"> 
+
+	<div class="nonCollapsedTripDetails">
 		<div class="title">
 			<ul>
 				<li><p>REVIEW YOUR UPCOMING TRAVEL</p></li>
@@ -45,7 +62,7 @@
 		<div class="hotelTripDetails" ng-show="showHotelDetails">
 			
 			<p class="headerDetails" ng-bind="currentTrip.hotelName"></p>
-			<p class="middleContent" show-address></p>
+			<show-address class="middleContent"> </show-address>
 			<p class="footerDetails" show-room-details></p>
 
 		</div>
@@ -127,10 +144,9 @@
 
 		<div class="nextTripActiveImg" ng-show="isNextTripAvailable" ng-click="nextTrip()"></div>
 		<div class="nextTripInActiveImg" ng-hide="isNextTripAvailable"></div>
-
+		</div>
 	</div>
-
-
+</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script type="text/javascript" src="../js/trips.js"></script>

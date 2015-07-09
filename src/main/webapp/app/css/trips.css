@@ -18,6 +18,7 @@
 	margin-top: 0px;
   	margin-bottom: 0px;
 }
+
 .nonCollapsedTripDetails .tripDateDiv {
 	background-color: #F3F3F3;
 	margin-left: 3px;
@@ -180,6 +181,7 @@
   margin-left: 20px;
   float: left;
   margin-right: 20px;
+  width: 102px;
 
 }
 .collapsedTripDetails .tripDetails .tripDateDiv .header{
@@ -259,4 +261,17 @@ cruiseTripDetails .middleContent {
   margin-top: 15px;
 }
 
+#hotelCreditDiv {
+	background-color:  #F3F3F3;
+	width: 400px;
+	height: 146px;
+}
 
+.tagImg {
+	background: url('../img/homepage-sprite.png') no-repeat -434px -336px;
+	width: 14px;
+	height: 14px;
+}
+.hotelCreditContent {
+
+}
