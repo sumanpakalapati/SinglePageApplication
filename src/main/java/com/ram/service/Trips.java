@@ -34,6 +34,17 @@ public class Trips {
 		return tripsResponse;
 	}
 
+	   @RequestMapping(method = RequestMethod.GET, produces=MediaType.APPLICATION_JSON)
+	    public @ResponseBody TripsResponse getTripsGET() {
+
+	        TripsResponse tripsResponse = new TripsResponse();
+	        List<TripInfo> trips = new ArrayList<TripInfo>(); 
+	        for (int i = 0; i < 10; i++) {
+	            trips.add(createNewTrip(i+1));
+	        }
+	        tripsResponse.setTripsInfos(trips);
+	        return tripsResponse;
+	    }
 	public TripInfo createNewTrip(int tripId) {
 		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(10);
